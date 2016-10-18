@@ -12,31 +12,14 @@
 #   2) If there are an even total number of number, then the average of the roots
 #   will be the median
 #
-# But first, I want to do this with trees.
-
-class BinaryNode
-
-  @data
-  @left
-  @right
-
-  attr_accessors :data, :left, :right
-
-  def initialize(data)
-    @data = data
-    @left = nil
-    @right = nil
-  end
-
-end
+# At first, I wanted to do this with trees, for the exercise in the "intuitive"
+#   way.  But then I discovered why the suggested implementation using arrays
+#   is so much better: it's because you are constantly dealing with the "last"
+#   item of the heap.  With trees, it's a hassle to keep track of the last node
+#   and if you're adding a new last node, how to find where to put it.  With
+#   arrays, the last element is always the last element of the array, and adding
+#   a new last alement is as easy as appending to the end of the array.
 
 class MinHeap
 
-  heap = BinaryNode.new
-
 end
-
-node = BinaryNode.new(5)
-puts node.data
-puts node.left
-puts node.right
