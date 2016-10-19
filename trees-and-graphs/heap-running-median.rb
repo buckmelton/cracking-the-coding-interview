@@ -1,4 +1,5 @@
-# Keep track of the running median of a series of numbers.
+# Keep track of and output the running median of a series of numbers.
+# E.g if the numbers are 1,2,3,4,5 the running median is 1.0, 1.5, 2.0, 2.5, 3.0
 #
 # How to use:
 # 1. Put your series of numbers into an array below:
@@ -6,6 +7,7 @@
 nums = [12,4,5,3,8,7]
 
 # 2. Run this file from the ruby interpreter.
+# 3. The running median will be output to the console.
 
 # Explanation:
 #
